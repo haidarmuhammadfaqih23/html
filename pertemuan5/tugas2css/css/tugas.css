@@ -6,7 +6,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 98vh;
   border: 2px solid black;
   border-radius: 10px;
   margin: 5px 5px;
@@ -19,13 +19,13 @@ body:hover {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 98vh;
   border: 2px solid white;
   border-radius: 10px;
   margin: 5px 5px;
 }
 
-/* seksi header */
+/* bagian header */
 header {
   background-color: #0070d9;
   color: white;
@@ -67,7 +67,7 @@ nav:hover {
   margin: 0px 6px;
 }
 
-/* konten halaman for the middle seksi */
+/* konten halaman bagian tengah */
 .konten-halaman {
   display: flex;
   background-color: white;
@@ -86,7 +86,7 @@ nav:hover {
   margin: 2px 4px;
 }
 
-/* kiri and kanan barsamping */
+/* kiri and kanan konten */
 .konten-barsamping {
   background-color: #ff34dd;
   color: white;
@@ -140,7 +140,7 @@ footer {
   padding: 15px;
   border: 2px solid black;
   border-radius: 5px;
-  margin: 0px 6px;
+  margin: 0px 6px 5px 6px;
 }
 
 footer:hover {
