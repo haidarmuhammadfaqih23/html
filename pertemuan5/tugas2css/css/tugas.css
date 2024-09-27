@@ -1,0 +1,154 @@
+/* Layouting */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px 5px;
+}
+
+body:hover {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px 5px;
+}
+
+/* seksi header */
+header {
+  background-color: #0070d9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px 6px;
+}
+
+header:hover {
+  background-color: #2081ff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 5px 6px;
+}
+
+/* navigasi menu */
+nav {
+  background-color: #ff00d4;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px 6px;
+}
+
+nav:hover {
+  background-color: rgb(255, 28, 225);
+  color: black;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 0px 6px;
+}
+
+/* konten halaman for the middle seksi */
+.konten-halaman {
+  display: flex;
+  background-color: white;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  margin: 2px 4px;
+}
+
+.konten-halaman:hover {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex: 1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 2px 4px;
+}
+
+/* kiri and kanan barsamping */
+.konten-barsamping {
+  background-color: #ff34dd;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 2.5px 2px 2.5px 2px;
+}
+
+.konten-barsamping:hover {
+  background-color: rgb(255, 28, 225);
+  color: black;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 2px 2px;
+}
+
+/* isi konten */
+.isi-konten {
+  flex-grow: 1;
+  background-color: #2495ff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 2.5px 2px;
+}
+
+.isi-konten:hover {
+  flex-grow: 1;
+  background-color: #1b85ff;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 2.5px 2px;
+}
+
+/* seksi Footer */
+footer {
+  background-color: #0070d9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px 6px;
+}
+
+footer:hover {
+  background-color: #2081ff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 5px 6px;
+}

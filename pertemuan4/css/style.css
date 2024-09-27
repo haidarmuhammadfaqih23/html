@@ -1,0 +1,41 @@
+/* contoh external style sheets */
+
+h3 {
+  color: brown;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15pt;
+}
+
+body {
+  background-color: rgb(175, 132, 215);
+}
+
+ul,
+li {
+  text-decoration: none;
+  /* list-syle: none */
+}
+table {
+  margin: auto;
+  border: 10px;
+}
+tr {
+  padding: 5px;
+  border: 1px solid green;
+}
+/* hover itu kalau mouse nya di atas elemen jadi berubah */
+tr:hover {
+  background-color: blue;
+  color: white;
+  font-size: 15pt;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#paragraph {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10;
+  color: rgb(15, 0, 84);
+}

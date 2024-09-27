@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" autocomplete="on" required /> <br />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan Email Aktif" required /> <br />
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Masukkan Password" minlength="8" maxlength="15" /> <br />
+      <br />
+
+      <label for="umur">Umur</label>
+      <input type="number" id="umur" name="umur" placeholder="Umur" min="15" max="22" /> <br />
+      <br />
+
+      <label for="">Tanggal Lahir</label>
+      <input type="date" name="tanggallahir" id="" /><br /><br />
+
+      <label for="">Waktu</label>
+      <input type="time" name="waktu" id="" /><br /><br />
+
+      <label for="">Bulan</label>
+      <input type="month" name="bulan" id="" /><br /><br />
+
+      <label for="">Pekan</label>
+      <input type="week" name="pekan" id="" /><br /><br />
+
+      <label for="">Tanggal & Waktu</label>
+      <input type="datetime-local" name="tanggalwaktu" id="" /><br /><br />
+
+      <label for="">Jenis Kelamin<input type="radio" name="gender" value="male" />Laki-Laki</label>
+      <label for=""><input type="radio" name="gender" value="female" />Perempuan</label><br /><br />
+
+      <label for=""
+        >Pilih Asal Negara
+        <select name="country" id="" placeholder="Pilih Negara">
+          <option value="indonesia">Indonesia</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="thailand">Thailand</option>
+          <option value="singapore" selected>Singapore</option>
+        </select></label
+      ><br /><br />
+
+      <label for="">Kritik dan saran <br /><textarea name="comments" id="" rows="4" cols="30" placeholder="Masukkan Kritik dan saran"></textarea></label> <br /><br />
+
+      <label for=""><input type="checkbox" name="terms" required />Saya Menyetujui Syarat dan Ketentuan</label><br /><br />
+
+      <button type="reset">Reset</button>
+
+      <!-- <input type="submit" value="Kirim" /> -->
+
+      <button type="submit">Kirim</button>
+      <!-- <button type="submit" disabled>Kirim</button> -->
+    </form>
+  </body>
+</html>

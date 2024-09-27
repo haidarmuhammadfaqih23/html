@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List.html</title>
+    <style>
+      /* Tag CSS */
+      tr td{
+        background-color: rgb(0, 0, 100);
+        color: white;
+      }
+      /* ID CSS */
+      #tabel{
+        background-color: green;
+        color: white;
+      }
+      /* Class CSS */
+      .Jurusan{
+        background-color: aqua;
+        color: rgb(0, 62, 62);
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="./css/list.css" /> -->
+  </head>
+  <body>
+    <h1 class="Judul" align="center">My Curriculum Vitae</h1>
+    <img style="height: 100px; width: auto" src="./image/PP.jpeg" alt="ini-profil" />
+    <ol type="I">
+      <li>
+        <h2>Biodata Pribadi</h2>
+        <ul>
+          <li>Nama Lengkap: Haidar Muhammad Faqih</li>
+          <li>Nama Panggilan: Haidar</li>
+          <li>Tempat/Tanggal Lahir: Jakarta, 18 Februari 2002</li>
+          <li>Jenis Kelamin: Laki-Laki</li>
+          <li>Alamat: Jl. Surabaya Raya No. 23</li>
+        </ul>
+      </li>
+      <li id="Pendidikan">
+        <h2>Biodata Pendidikan</h2>
+        <ol>
+          <li>
+            <h3>Pendidikan Formal</h3>
+            <ul type="circle">
+              <li>TKIT Madani, 2010</li>
+              <li>SDIT Madani</li>
+              <li>SMPIT Madani</li>
+              <li>SMKIT Madani</li>
+              <li>STT Nurul Fikri</li>
+            </ul>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <th>No</th>
+                <th>Pendidikan</th>
+                <th></th>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h3>Pendidikan Non Formal</h3>
+            <ul type="circle">
+              <li>NufiAcademy</li>
+              <li>Brain Academy</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li></li>
+      <li>
+        <h3>Soscial Media</h3>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>Table</h3>
+        <table border="true" cellpadding="3" cellspasing="5">
+          <caption border="1">
+            Tabel 2 dan 3
+          </caption>
+          <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+          </tr>
+          <tr>
+            <td colspan="2">ini sel 1&2</td>
+            <td rowspan="2">ini sel 3&6</td>
+          </tr>
+          <tr>
+            <td>ini sel 4</td>
+            <td>ini sel 5</td>
+          </tr>
+        </table>
+        <br />
+        <table border="true">
+          <caption>
+            Daftar Belanja Maret
+          </caption>
+          <br />
+          <tr>
+            <td>No</td>
+            <td colspan="3">nama barang</td>
+            <td>unit</td>
+            <td colspan="2">harga</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <br />
+        <table class="Jurusan" border="true">
+          <tr>
+            <th>Tahun</th>
+            <th>Instansi</th>
+            <th>Jurusan</th>
+          </tr>
+          <tr>
+            <td>2001 - 2002</td>
+            <td>SMK</td>
+            <td>Multimedia</td>
+          </tr>
+          <tr>
+            <td>2003 - 2004</td>
+            <td>STT</td>
+            <td>Informatika</td>
+          </tr>
+        </table>
+      </li>
+    </ol>
+  </body>
+</html>

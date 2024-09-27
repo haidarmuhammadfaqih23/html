@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Form Pendaftaran (Tugas Pertemuan 3)By Haidar Muhammad Faqih</title>
+  </head>
+  <body>
+    <h2>Form Pendaftaran (Tugas Pertemuan 3)</h2>
+    <form action="#" method="post">
+      <!-- Nama Lengkap (harus diisi dan minimal 3 karakter)-->
+      <label for="fullname">Nama Lengkap:</label><br />
+      <input type="text" id="fullname" name="fullname" minlength="3" required placeholder="Masukkan Nama Lengkap" /><br /><br />
+      <!-- nama lengkap itu wajib diisi makanya ditambah required, terus juga minlength="3" karena persyaratan di tugasnya minimal harus mengisi paling sedikit 3 karakter -->
+
+      <!-- Email (harus valid dan diisi)-->
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required placeholder="Masukkan Email Aktif Anda" /><br /><br />
+      <!-- email disini menggunakan input type email, dimana pada HTML5 sudah ada form validation bawaan, yang menuntut email tersebut harus ada tanda @ dan . sebagai ciri bahwa itu adalah email -->
+
+      <!-- Password (minimal 8 karakter, harus diisi) -->
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" minlength="8" required placeholder="Masukkan Password Anda" /><br /><br />
+      <!-- jadi kita menggunakan input type password, agar passwordnya bersifat lebih rahasia dan terjaga, karena minimal 8 karakter, maka ditambahkan perintah minlength="8". required dalam setiap element input bararti bahwa wajib diisi/ data yang harus diisi/ data yang diperlukan -->
+
+      <!-- Tanggal Lahir (harus diisi dan pengguna harus berumur minimal 18 tahun [harus pake script sih itu (script dengan javascript untuk persyaratan ini, ada di bawah)]-->
+      <label for="birthDate">Tanggal Lahir: (Usia Minimal 18 Tahun)</label><br />
+      <input type="date" id="birthDate" name="birthDate" required /><br /><br />
+      <!-- agar memenuhi syarat harus 18 tahun paling minimal, itu harus menggunakan script sendiri, saya menggunakan java script di bawah untuk memenuhi syarat tersebut -->
+
+      <!-- Jenis Kelamin (pilihan antara laki-laki dan perempuan, wajib dipilih) -->
+      <label>Jenis Kelamin:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Laki-laki</label><br />
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Perempuan</label><br /><br />
+      <!-- #note: agar bisa wajib dipilih salah satu, maka name dari 2 opsi tersebut harus sama, dan masing masing opsi tersebut harus memiliki id & value yang berbeda -->
+
+      <!-- Nomor Telepon (hanya angka, dengan panjang 10-13 digit)-->
+      <label for="phone">Nomor Telepon:</label><br />
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" required /><br /><br />
+      <!-- menggunakan pattern, karena dengan pattern lebih cocok untuk menentukan polanya(kriteria yang harus dipenuhi), seperti [0-9] itu berarti hanya memperbolehkan angka 0-9, {10,13} itu berarti dari elemen input tersebut harus berjumlah 10-13 karakter dengan karakter angka 0-9 -->
+
+      <!-- Unggah Foto Profil (opsional) -->
+      <label for="pp">Upload Photo Profile (Optional):</label><br />
+      <input type="file" id="pp" name="pp" accept="image/*" /><br /><br />
+      <!-- Untuk unggah foto profil, dibutuhkan input type dengan type file, dan karena untuk gambar, jadi accept image/* untuk menyetujui hanya file yang berjenis image(gambar) yang bisa di unggah disini -->
+
+      <!-- Persetujuan Syarat dan Ketentuan (checkbox, harus disetujui) -->
+      <input type="checkbox" id="sk" name="sk" required />
+      <label for="sk">Saya menyetujui syarat dan ketentuan</label><br /><br />
+      <!-- disini menuntut pengguna untuk men-checklist checkbox(tanda pengguna menyetuji syarat dan ketentuan) -->
+
+      <!-- Tombol Submit -->
+      <button type="submit">Kirim</button>
+      <br /><br />
+      <!-- tombol submit sebenernya bisa pakai input type submit, tapi agar lebih leluasa, kita menggunakan element button(tombol) sebagai submition nya -->
+    </form>
+
+    <!-- Ini adalah script untuk membaca umur dari date, dan persyaratan harus lebih dari 18 tahun -->
+    <script>
+      document.getElementById("birthDate").addEventListener("change", function () {
+        const today = new Date();
+        const birthDate = new Date(this.value);
+        const age = today.getFullYear() - birthDate.getFullYear();
+        const m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+
+        if (age < 18) {
+          alert("Maaf, anda harus berusia 18 tahun atau Lebih. Silahkan Coba Lagi!");
+          this.value = ""; // alert ini akan tampil jika pengguna masih kurang dari 18 tahun umurnya
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* style untuk blok elemen */
+
+.block-element {
+  background-color: aliceblue;
+  margin: 5px 0;
+  padding: 50px; /*salah satu syarat block elemnet*/
+  border: 1px solid rgb(63, 147, 222);
+  width: 100%; /*syarat lanjutan dari block element => tampilan penuh 1 baris layar*/
+}
+
+nav.block-element {
+  float: left;
+  width: 60%;
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+}
+
+.inline-element {
+  background-color: aliceblue;
+  padding: 2px 5px;
+  border: 1px solid rgb(63, 147, 222);
+}
+
+nav a {
+  color: blueviolet;
+  padding: 5px 10 px;
+  border: 1px solid rgb(63, 147, 222);
+  background-color: aqua;
+}
+
+nav a:hover {
+  text-decoration: none;
+}

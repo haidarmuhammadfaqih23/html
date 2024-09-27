@@ -1,0 +1,15 @@
+/* Tag CSS */
+tr td {
+  background-color: rgb(0, 0, 100);
+  color: white;
+}
+/* ID CSS */
+#tabel {
+  background-color: rgb(0, 72, 105);
+  color: rgb(125, 255, 225);
+}
+/* Class CSS */
+.Jurusan {
+  background-color: rgb(47, 255, 0);
+  color: rgb(0, 62, 62);
+}

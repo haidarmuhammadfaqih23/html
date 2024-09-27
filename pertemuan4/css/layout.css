@@ -1,0 +1,59 @@
+/* selector universal => mengatur seluruh tag secara bersamaan */
+* {
+  /* css layout */
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url(../image/header.jpeg);
+  size: fit;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: aquamarine;
+  justify-content: center;
+  display: flex;
+}
+.navbar a {
+  float: left;
+  text-decoration: none;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.side {
+  width: 25%;
+}
+.column.middle{
+  width: 50%;
+}
+
+.row:after{
+  content: "";
+  display: block;
+  clear: both; /**/
+}
+
+.footer{
+  background-color: aquamarine;
+  padding: 30px;
+  text-align: center;
+}
